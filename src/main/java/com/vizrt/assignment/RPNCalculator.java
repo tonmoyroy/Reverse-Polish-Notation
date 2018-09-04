@@ -1,6 +1,5 @@
 package com.vizrt.assignment;
 
-import java.util.Arrays;
 import java.util.Stack;
 
 public class RPNCalculator {
@@ -12,7 +11,7 @@ public class RPNCalculator {
         this.registry = registry;
     }
 
-    public Double calculate(String input) {
+    public Double calculate(String input) throws Exception {
         Stack<Double> stack = new Stack<>();
 
         String[] items = input.split(" ");
@@ -25,6 +24,9 @@ public class RPNCalculator {
                 double number = Double.parseDouble(item);
                 stack.push(number);
             } else {
+                if(stack.empty()){
+                    throw new Exception("Incorrect Input");
+                }
                 double result = operation.calculate(stack);
                 stack.push(result);
             }
