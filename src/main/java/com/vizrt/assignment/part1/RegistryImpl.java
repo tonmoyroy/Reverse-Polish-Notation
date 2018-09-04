@@ -1,4 +1,4 @@
-package com.vizrt.assignment;
+package com.vizrt.assignment.part1;
 
 import java.util.ArrayList;
 import java.util.List;

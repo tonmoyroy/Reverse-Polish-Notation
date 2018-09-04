@@ -1,4 +1,4 @@
-package com.vizrt.assignment;
+package com.vizrt.assignment.part1;
 
 import org.junit.Before;
 import org.junit.Test;

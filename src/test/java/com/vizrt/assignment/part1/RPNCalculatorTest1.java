@@ -1,4 +1,4 @@
-package com.vizrt.assignment;
+package com.vizrt.assignment.part1;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -19,7 +19,7 @@ public class RPNCalculatorTest1 {
     }
 
     @Test
-    public void testCalculate() {
+    public void testCalculate() throws Exception {
         double result = rpnCalculator.calculate("3 1 2 + * .");
         assertThat(result, is(equalTo(9.0)));
     }

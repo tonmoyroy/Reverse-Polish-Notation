@@ -1,8 +1,8 @@
-package com.vizrt.assignment;
+package com.vizrt.assignment.part1;
 
 import java.util.Stack;
 
-public class MAXOperationImpl implements Operation {
+public class MINOperationImpl implements Operation{
     @Override
     public String getOperator() {
         return "MAX";

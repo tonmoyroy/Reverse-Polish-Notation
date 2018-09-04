@@ -1,17 +1,17 @@
-package com.vizrt.assignment;
+package com.vizrt.assignment.part1;
 
 import java.util.Stack;
 
-public class PowerOperationImpl implements Operation {
+public class MinusOperationImpl implements Operation {
     @Override
     public String getOperator() {
-        return "^";
+        return "-";
     }
 
     @Override
     public double calculate(Stack<Double> numbers) {
         double x = numbers.pop();
         double y = numbers.pop();
-        return Math.pow(y,x);
+        return y - x;
     }
 }
