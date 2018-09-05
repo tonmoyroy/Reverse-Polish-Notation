@@ -5,11 +5,11 @@ import java.util.Stack;
 public class MINOperationImpl implements Operation{
     @Override
     public String getOperator() {
-        return "MAX";
+        return "MIN";
     }
 
     @Override
     public double calculate(Stack<Double> numbers) {
-        return numbers.stream().max(Double::compareTo).get();
+        return numbers.stream().min(Double::compareTo).get();
     }
 }
